@@ -1,0 +1,168 @@
+.home__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-gap: 3rem;
+  padding-top: 1rem;
+}
+
+.lineUp {
+  animation: 1s anim-lineUp ease-out ;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* Video COMPONENT CSS */
+#gif{
+  mix-blend-mode: darken;
+}
+#quotes{
+  max-height: 30px;
+  max-width: 30px;
+  margin-top: 10px;
+}
+
+
+/* DATA COMPONENT CSS */
+.data__area {
+  text-align: left !important; 
+  margin-left: 1rem;
+}
+h1{
+  font-size: 63.96px;
+}
+
+.para__title{
+  font-size: 23px;
+}
+
+.para__content{
+  font-size: 21px;
+}
+
+.quote p {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: #141414;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dedede;
+  color:#141414 ;
+}
+
+/* Reviews */
+/* Reviews */
+#carousel_title{
+  margin-top: 1rem;
+}
+.reviews__area {
+  grid-column: span 2;
+  text-align: center;
+ /* Adjust this value as needed */
+}
+
+.slide__item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  padding: 1px;
+  color: #354052;
+}
+
+.slide__heading {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slide__quote {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 600px;
+}
+
+.slide__cite {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+/* Carousel controls */
+.Wallop-buttonPrevious,
+.Wallop-buttonNext {
+  background-color: transparent;
+  border: none;
+  width: 65px;
+  padding: 10px 20px;
+  transition: opacity 200ms;
+  position: absolute;
+  top: calc(50% - 40px); /* Adjust this value as needed */
+  z-index: 2;
+
+}
+
+.Wallop-buttonNext {
+  right: 0;
+  transform: translate3d(0, -50%, 0) rotate(180deg);
+}
+
+.Wallop-buttonPrevious:hover,
+.Wallop-buttonNext:hover,
+.Wallop-buttonPrevious:focus,
+.Wallop-buttonNext:focus {
+  opacity: 0.6;
+}
+
+/* Carousel indicators */
+.carousel-indicators .active {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.carousel-indicators li {
+  border: 2px solid #354052;
+  background-color: #354052;
+}

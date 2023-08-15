@@ -1,0 +1,89 @@
+.footer {
+  background-color: #141414;
+  color: #fff;
+  padding: 5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the footer content horizontally */
+  align-items: center; /* Center the footer content vertically */
+}
+
+.footer_main {
+  width: 60%; /* Increase the width of the footer_main to 60% */
+  display: flex;
+  justify-content: flex-start; /* Left-align the content within the footer_main */
+  flex-wrap: wrap; /* Allow content to wrap to the next line if necessary */
+}
+
+a {
+  color: #5a5a5a !important;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+  cursor: none; /* Add transition to smoothly change color on hover */
+}
+
+.footer_item:hover {
+  color: #fff !important; /* Change link color to white when hovered */
+  cursor: none;
+}
+
+a:hover{
+  color: #fff !important; /* Change link color to white when hovered */
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between; /* To maintain the same structure, use space-between */
+  width: 100%; /* Set the width of the footer__nav to 100% */
+}
+
+.footer__section {
+  margin-bottom: 1rem;
+  cursor: none;
+}
+
+.footer__left,
+.footer__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav p {
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Added more space between the text */
+  cursor: none;
+}
+
+.footer__bar {
+  border: 1px solid #bbbbbb;
+  width: 100%; /* Set the width of the footer__bar to 100% */
+  margin-bottom: 1rem;
+}
+
+.footer__copy {
+  margin: 0;
+  color: #5a5a5a;
+  text-align: center; /* Center the copyright text */
+  font-size: 0.8rem; /* Make the font size smaller */
+}
+
+.footer_title {
+  color: #ededed !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: none;
+}
+
+.footer_title:hover {
+  color: #767676 !important;
+
+}
+
+.footer_item {
+  color: #5a5a5a !important;
+  padding: 10px;
+  cursor: none;
+}

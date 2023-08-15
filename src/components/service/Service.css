@@ -1,0 +1,106 @@
+/* About.css */
+#meet{
+    margin-top: 2rem;
+  }
+  .servicesection {
+    display: grid;
+    grid-template-columns: repeat(1,100%); /* Two equal columns */
+    grid-gap: 3rem;
+    padding-top: 1rem;}
+  
+  .service__container {
+    /* Add any styles you need for the home__container */
+  }
+  
+  .service__content {
+  }
+  
+  .service__area {
+    display: flex !important;
+    flex-direction: column !important; /* Arrange children in a column */
+    align-items: center !important; /* Center align children horizontally */
+    justify-content: center !important; /* Center align children vertically */
+    padding-top: 1rem;
+    margin-bottom: 1rem; /* Add some space between Data and Card */
+  }
+  
+  .servicecard__area {
+   margin-bottom: 3rem;
+  }
+  
+  #serviceimg {
+    border-radius: 200px;
+    /* Add any other styles you need for the image */
+  }
+  
+  .card__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns for larger screens */
+    grid-gap: 10px; /* Adjust the gap between cards as needed */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+  
+  .card__service {
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(45deg, rgba(9, 175, 232, 0.1) 0%, rgba(41, 244, 153, 0.1) 100%);    
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden; /* Hide any content that overflows the card */
+    margin: 10px;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .card__service p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+  }
+  .card__service p:hover {
+   
+  }
+  .card__grid:hover .card__service:not(:hover) {
+    opacity: .5; /* Apply blur to all other cards except the one being hovered */
+  }
+  
+  .card__service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    filter: none; /* Remove blur from the hovered card */
+  }
+  
+  .avatar{
+    height: 20%;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .lineUp {
+    animation: 1s anim-lineUp ease-out ;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
