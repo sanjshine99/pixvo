@@ -1,70 +1,101 @@
-/* About.css */
-#meet{
+#meet {
   margin-top: 2rem;
 }
+
 .aboutsection {
   display: grid;
-  grid-template-columns: repeat(1,100%); /* Two equal columns */
+  grid-template-columns: repeat(1, 100%); /* Two equal columns */
   grid-gap: 3rem;
+
 }
 
 .about__container {
-  /* Add any styles you need for the home__container */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__content {
-
+ 
 }
 
 #text {
-    text-align: center !important;
+  text-align: center !important;
 }
+
 .about__area {
   display: flex !important;
-  flex-direction: column !important; /* Arrange children in a column */
-  align-items: center !important; /* Center align children horizontally */
-  justify-content: center !important; /* Center align children vertically */
-  padding-top: 2rem;
-  margin-bottom: 10px; /* Add some space between Data and Card */
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-
 .aboutcard__area {
- margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 #aboutimg {
-  border-radius: 200px;
+  border-radius: 50%;
   /* Add any other styles you need for the image */
 }
-
+#canvas {
+  width: 100%;
+  height: 100%;
+}
 .card__grid_about {
+  align-items: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns for larger screens */
-  grid-gap: 30px; /* Adjust the gap between cards as needed */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .card__about {
-  width: 100%;
-  height: 100%;
-  background-color: #f9f9f9;
-  border: 0px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: justify;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  overflow: hidden; /* Hide any content that overflows the card */
-  margin: 0;
-  text-overflow: ellipsis;
+  cursor: none;
+  width: 22em;
+  height: 350px;
+  max-width: 80%;
+  padding: 10px;
+  background: #FFF;
+  box-shadow: 0 0 6px 0 rgba(#202024, .12);
+  transition: all .35s ease;
 }
 
-.card__grid:hover .card__about:not(:hover) {
-  filter: blur(1px); /* Apply blur to all other cards except the one being hovered */
+.card__about::before,
+.card__about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 4px;
+}
+
+.card__about::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: .5s;
+}
+
+.card__about::after {
+  width: 100%;
+  background: white;
+  transition: width .5s ease;
+}
+
+.card__about p {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .card__about:hover {
@@ -73,15 +104,16 @@
   filter: none; /* Remove blur from the hovered card */
 }
 
-.avatar{
+.avatar {
   height: 20%;
   border-radius: 100%;
   margin-bottom: 1rem;
 }
 
 .lineUp {
-  animation: 1s anim-lineUp ease-out ;
+  animation: 1s anim-lineUp ease-out;
 }
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
@@ -97,5 +129,64 @@
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+.content {
+  width: 18em;
+  max-width: 80%;
+}
+
+.logo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all .35s ease;
+}
+
+h6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hover_content {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all .55s ease;
+
+  p {
+    margin: 1.5em 0 0;
+    color: #6E6E70;
+    line-height: 1.4em;
+  }
+}
+
+.card__about:hover {
+  width: 24em;
+  box-shadow: 0 10px 20px 0 rgba(#202024, .12);
+
+  &::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease, width .5s ease;
+    transition-delay: 0;
+  }
+
+  &::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+  }
+
+  .logo {
+    margin-bottom: .5em;
+  }
+
+  .hover_content {
+    max-height: 10em;
+    transform: none;
   }
 }

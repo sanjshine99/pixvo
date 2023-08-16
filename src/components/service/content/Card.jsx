@@ -1,12 +1,23 @@
 import React from 'react'
-
+import '../Service'
 function Card() {
   return (
     <div className="card__grid">
-      <div className="card__service">
+ <div className="card__service">
   <h2>Branding</h2>
   <p>Create a unique and consistent image, name, and symbol that represents your company or product and differentiate it from competitors.</p>
+  <div className="background">
+    <div className="tiles">
+      <div className="tile tile-1"></div>
+      <div className="tile tile-2"></div>
+      <div className="tile tile-3"></div>
+      <div className="tile tile-4"></div>
+    </div>
+    <div className="line line-1"></div>
+    <div className="line line-2"></div>
+  </div>
 </div>
+
 <div className="card__service">
   <h2>Branding Identity</h2>
   <p>Enhance the visual representation of your brand, including elements such as logos, typography, color schemes, and brand guidelines created by us.</p>

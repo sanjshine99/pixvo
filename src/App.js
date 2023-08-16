@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
