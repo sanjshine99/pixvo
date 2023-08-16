@@ -44,7 +44,6 @@ const getRandomFromArray = (array) => (
 
 const resetPeep = ({ stage, peep }) => {
   const direction = Math.random() > 0.5 ? 1 : -1
-  // using an ease function to skew random to lower values to help hide that peeps have no legs
   const offsetY = 100 - 250 * gsap.parseEase('power2.in')(Math.random())
   const startY = stage.height - peep.height + offsetY
   let startX
@@ -102,7 +101,6 @@ const walks = [
   normalWalk,
 ]
 
-// CLASSES
 
 class Peep {
   constructor({

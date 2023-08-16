@@ -11,9 +11,9 @@ function Card() {
     <section className="about__container">
       <div className="card__grid_about">
       <div className="card__about">
-        <div className="about__content">
+        <div className="content">
           <img src={TaskMaster} alt="" className="avatar" />
-          <h6>Taskmaster</h6>
+          <h3>Taskmaster</h3>
           <div className="hover_content">
             <p>
               The Taskmaster is a dynamic force within the team, orchestrating
@@ -29,7 +29,7 @@ function Card() {
       <div className="card__about">
         <div className="content">
           <img src={Gatekeeper} alt="" className="avatar" />
-          <h6>Gatekeeper</h6>
+          <h3>Gatekeeper</h3>
           <div className="hover_content">
             <p>
               The Gatekeeper is the guardian of order and compliance within the
@@ -46,7 +46,7 @@ function Card() {
       <div className="card__about">
         <div className="content">
           <img src={StrategySage} alt="" className="avatar" />
-          <h6>Strategy Sage</h6>
+          <h3>Strategy Sage</h3>
           <div className="hover_content">
             <p>
               The Strategy Sage is the guiding light of the team, with a wealth
@@ -63,7 +63,7 @@ function Card() {
       <div className="card__about">
         <div className="content">
           <img src={WanderingWizard} alt="" className="avatar" />
-          <h6>Wandering Wizard</h6>
+          <h3>Wandering Wizard</h3>
           <div className="hover_content">
             <p>
               The Wandering Wizard is the team member dedicated to bridging gaps
@@ -80,7 +80,7 @@ function Card() {
       <div className="card__about">
         <div className="content">
           <img src={PixelPicasso} alt="" className="avatar" />
-          <h6>Pixel Picasso</h6>
+          <h3>Pixel Picasso</h3>
           <div className="hover_content">
             <p>
               The Pixel Picasso is the creative visionary of the team, with an

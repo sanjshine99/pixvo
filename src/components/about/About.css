@@ -9,6 +9,7 @@
 
 }
 
+
 .about__container {
   height: 100%;
   display: flex;
@@ -105,7 +106,7 @@
 }
 
 .avatar {
-  height: 20%;
+  height:60px;
   border-radius: 100%;
   margin-bottom: 1rem;
 }
@@ -135,6 +136,7 @@
 .content {
   width: 18em;
   max-width: 80%;
+  height: 500px;
 }
 
 .logo {
@@ -143,7 +145,7 @@
   transition: all .35s ease;
 }
 
-h6 {
+h3 {
   color: #999;
   font-weight: 600;
   text-transform: uppercase;
