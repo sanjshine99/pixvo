@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../About.css';
-import Image from '../../../assets/art.webp';
 import gsap from 'gsap';
 function Data() {
   const [animate, setAnimate] = useState(false);
