@@ -13,7 +13,7 @@ function Data() {
   }, []);
   return (
     <section className="projectsection" id="service">
-      <div className="project__container container">
+      <div className="project__container">
         <div className="project__content">
         <h1 className={animate ? 'lineUp' : ''}>Projects</h1>
         <div className="project__area">
