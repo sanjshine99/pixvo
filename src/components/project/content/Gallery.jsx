@@ -30,14 +30,15 @@ function Gallery() {
                 </button>
           <iframe 
             title="Sora no misu Brand Identity"
-            src="https://www.behance.net/gallery/176682977/Sora-no-misu-Brand-Identity?iframe=1&amp;ilo0=1"            width="800"
-            height="600"
+            src="https://www.behance.net/gallery/176682977/Sora-no-misu-Brand-Identity?iframe=1&amp;ilo0=1"            
+            width="1920"
+            height="1080"  
             frameBorder="0"
             allow="autoplay; fullscreen; xr-spatial-tracking"
             allowFullScreen={true}
             mozallowfullscreen="true"
             webkitallowfullscreen="true"
-            style={{ border: 'none', maxWidth: '100%',borderRadius: '20px' }}
+            style={{ border: 'none', maxWidth: '100%',maxHeight: '100%',borderRadius: '20px' }}
           ></iframe>
         </div>
       )}
