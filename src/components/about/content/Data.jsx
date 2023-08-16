@@ -265,7 +265,7 @@ function render () {
       <div><canvas id="canvas"></canvas></div>
       <div className="about__container container">
         <div className="about__content">
-        <h1 className={animate ? 'lineUp' : ''}>Who are we?</h1>
+        <h1 className={animate ? 'lineUp' : ''}>Who we are . . .</h1>
         <div className="about__area">
             <div className="about__area">
             <p id='text'>
