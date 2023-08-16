@@ -17,8 +17,8 @@ function Footer() {
           <div className="footer__section">
             <ul className="footer__section">
             <li><Link to="" className='footer_title'>Social Media</Link></li>
-              <li className='footer_item'><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li className='footer_item'><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li className='footer_item'><a href="https://www.instagram.com/pixvo_studio/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li className='footer_item'><a href="https://www.linkedin.com/company/pixvo-studio/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
           <div className="footer__section">
