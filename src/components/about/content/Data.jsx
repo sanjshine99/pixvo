@@ -260,12 +260,13 @@ function render () {
     };
   }, []);
   return (
+    
     <section className="aboutsection" id="about">
+      <div><canvas id="canvas"></canvas></div>
       <div className="about__container container">
         <div className="about__content">
-        <h1 className={animate ? 'lineUp' : ''}>About</h1>
+        <h1 className={animate ? 'lineUp' : ''}>Who are we?</h1>
         <div className="about__area">
-        <canvas id="canvas"></canvas>
             <div className="about__area">
             <p id='text'>
               We are a team of developers and designers with backgrounds in motion graphics,<br/>
