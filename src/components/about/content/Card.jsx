@@ -28,23 +28,6 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={Gatekeeper} alt="" className="avatar" />
-          <h3>Gatekeeper</h3>
-          <div className="hover_content">
-            <p>
-              The Gatekeeper is the guardian of order and compliance within the
-              team. Armed with her extensive knowledge of administrative and
-              legal matters, she safeguards the team's interests, ensuring that
-              all documentation, contracts, and procedures adhere to regulations
-              and best practices. She provides a solid foundation of structure
-              and reliability, acting as a gatekeeper to protect the team's
-              integrity.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="card__about">
-        <div className="content">
           <img src={StrategySage} alt="" className="avatar" />
           <h3>Strategy Sage</h3>
           <div className="hover_content">
@@ -62,17 +45,17 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={WanderingWizard} alt="" className="avatar" />
-          <h3>Wandering Wizard</h3>
+          <img src={Gatekeeper} alt="" className="avatar" />
+          <h3>Gatekeeper</h3>
           <div className="hover_content">
             <p>
-              The Wandering Wizard is the team member dedicated to bridging gaps
-              and fostering connections between countries and cultures. He
-              possesses a global perspective and serves as a catalyst for
-              international collaboration and partnerships. With his diplomatic
-              skills and cultural sensitivity, he traverses borders, breaking
-              down barriers, and fostering mutual understanding, ultimately
-              bringing diverse communities together.
+              The Gatekeeper is the guardian of order and compliance within the
+              team. Armed with her extensive knowledge of administrative and
+              legal matters, she safeguards the team's interests, ensuring that
+              all documentation, contracts, and procedures adhere to regulations
+              and best practices. She provides a solid foundation of structure
+              and reliability, acting as a gatekeeper to protect the team's
+              integrity.
             </p>
           </div>
         </div>
@@ -89,6 +72,23 @@ function Card() {
               stunning and captivating graphics that leave a lasting impression.
               His artistic prowess and innovative thinking make them the go-to
               expert for transforming ideas into visually striking realities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="card__about">
+        <div className="content">
+          <img src={WanderingWizard} alt="" className="avatar" />
+          <h3>Wandering Wizard</h3>
+          <div className="hover_content">
+            <p>
+              The Wandering Wizard is the team member dedicated to bridging gaps
+              and fostering connections between countries and cultures. He
+              possesses a global perspective and serves as a catalyst for
+              international collaboration and partnerships. With his diplomatic
+              skills and cultural sensitivity, he traverses borders, breaking
+              down barriers, and fostering mutual understanding, ultimately
+              bringing diverse communities together.
             </p>
           </div>
         </div>
