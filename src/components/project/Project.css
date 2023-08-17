@@ -1,5 +1,5 @@
 hr{
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .gallery-container {
   max-width: 100%;
@@ -48,7 +48,7 @@ hr{
 }
 
 .big-image:hover {
-  transform: scale(1.1);
+transform: scale(1.01);
 }
 
 /* The container that covers the page and provides blur effect */

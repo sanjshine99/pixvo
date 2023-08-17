@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Project.css';
 import close from '../../../assets/icons/close.png'
+import zero from '../../../assets/project_images/zero.png'
 
 function Gallery() {
   const [isIframeVisible, setIsIframeVisible] = useState(false);
@@ -78,8 +79,49 @@ function Gallery() {
           </div>
          
         </div>
-        
+<hr></hr>
+        <div>
+          <h1 className='project_title'>Studio ZRO°<div className="dropdown-header" onClick={handleDropdownClick}>
+       | Brand Guidelines |
+      </div></h1>
+          <div className="dropdown-container">
+      
+      {isIframeVisible && (
+        <div className="iframe-popup">
+          <button className="close-button" onClick={handleCloseClick}>
+                  <img src={close} className='close-button' alt='close' />
+                </button>
+          <iframe 
+            title="Sora no misu Brand Identity"
+            src="https://www.behance.net/gallery/177842269/Studio-ZRO?iframe=1&amp;ilo0=1"            
+            width="1920"
+            height="1080"  
+            frameBorder="0"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            allowFullScreen={true}
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ border: 'none', maxWidth: '100%',maxHeight: '100%',borderRadius: '20px' }}
+          ></iframe>
+        </div>
+      )}
+             </div>
+          <p className='project_desc'>
+            ZRO<sup>o</sup> Studio is an avant-garde architectural firm renowned for its innovative interpretations of brutalist architecture rooted in the Swiss alpine context.
+
+With a team of visionary architects, sculptors, and material artisans, the studio specializes in crafting austere yet captivating architectural statements that harmonize with the rugged Swiss landscape while evoking a sense of timeless grandeur.
+          </p>
+          <div className="image-container">
+            <div className="big-image">
+              <img src={zero} alt="zero" className='big-image'  />
+            </div>
+         <hr />
+          </div>
+         
+        </div>
+       
       </div>
+    
     </div>
   );
 }
