@@ -4,30 +4,38 @@ import close from '../../../assets/icons/close.png'
 import zero from '../../../assets/project_images/zero.png'
 
 function Gallery() {
-  const [isIframeVisible, setIsIframeVisible] = useState(false);
+  const [isSoraIframeVisible, setIsSoraIframeVisible] = useState(false);
+  const [isZeroIframeVisible, setIsZeroIframeVisible] = useState(false);
 
-  const handleDropdownClick = () => {
-    setIsIframeVisible(!isIframeVisible);
+  const handleSoraDropdownClick = () => {
+    setIsSoraIframeVisible(!isSoraIframeVisible);
+  };
+
+  const handleZeroDropdownClick = () => {
+    setIsZeroIframeVisible(!isZeroIframeVisible);
   };
 
   const handleCloseClick = () => {
-    setIsIframeVisible(false);
+    setIsSoraIframeVisible(false);
+    setIsZeroIframeVisible(false);
   };
+
+
 
   return (
     <div className="page-container">
       <div className="gallery-container">
-        <div>
 
-          <h1 className='project_title'>Sora no misu<div className="dropdown-header" onClick={handleDropdownClick}>
+        <div>
+          <h1 className='project_title'>Sora no misu<div className="dropdown-header" onClick={handleSoraDropdownClick}>
        | Brand Guidelines |
       </div></h1>
           <div className="dropdown-container">
       
-      {isIframeVisible && (
+      {isSoraIframeVisible && (
         <div className="iframe-popup">
           <button className="close-button" onClick={handleCloseClick}>
-                  <img src={close} className='close-button' alt='close' />
+                  <img src={close} className='close-button' alt='close'  />
                 </button>
           <iframe 
             title="Sora no misu Brand Identity"
@@ -79,20 +87,22 @@ function Gallery() {
           </div>
          
         </div>
-<hr></hr>
+      
+      <hr></hr>
+
         <div>
-          <h1 className='project_title'>Studio ZRO°<div className="dropdown-header" onClick={handleDropdownClick}>
+          <h1 className='project_title'>Studio ZRO°<div className="dropdown-header" onClick={handleZeroDropdownClick}>
        | Brand Guidelines |
       </div></h1>
           <div className="dropdown-container">
       
-      {isIframeVisible && (
+      {isZeroIframeVisible && (
         <div className="iframe-popup">
           <button className="close-button" onClick={handleCloseClick}>
                   <img src={close} className='close-button' alt='close' />
                 </button>
           <iframe 
-            title="Sora no misu Brand Identity"
+            title="Studio ZRO"
             src="https://www.behance.net/gallery/177842269/Studio-ZRO?iframe=1&amp;ilo0=1"            
             width="1920"
             height="1080"  
@@ -107,13 +117,14 @@ function Gallery() {
       )}
              </div>
           <p className='project_desc'>
-            ZRO<sup>o</sup> Studio is an avant-garde architectural firm renowned for its innovative interpretations of brutalist architecture rooted in the Swiss alpine context.
-
-With a team of visionary architects, sculptors, and material artisans, the studio specializes in crafting austere yet captivating architectural statements that harmonize with the rugged Swiss landscape while evoking a sense of timeless grandeur.
+            ZRO<sup>o</sup> Studio is an avant-garde architectural firm renowned for its innovative interpretations of brutalist 
+            architecture rooted in the Swiss alpine context.With a team of visionary architects, sculptors, and material artisans, 
+            the studio specializes in crafting austere yet captivating architectural statements that harmonize with the rugged Swiss 
+            landscape while evoking a sense of timeless grandeur.
           </p>
           <div className="image-container">
             <div className="big-image">
-              <img src={zero} alt="zero" className='big-image'  />
+              <img src={zero} alt="zero" className='big-image' onClick={handleZeroDropdownClick} />
             </div>
          <hr />
           </div>
