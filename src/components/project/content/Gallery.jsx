@@ -6,6 +6,7 @@ import zero from '../../../assets/project_images/zero.png'
 function Gallery() {
   const [isSoraIframeVisible, setIsSoraIframeVisible] = useState(false);
   const [isZeroIframeVisible, setIsZeroIframeVisible] = useState(false);
+  const [isBlurBackground, setIsBlurBackground] = useState(false);
 
   const handleSoraDropdownClick = () => {
     setIsSoraIframeVisible(!isSoraIframeVisible);
@@ -18,14 +19,12 @@ function Gallery() {
   const handleCloseClick = () => {
     setIsSoraIframeVisible(false);
     setIsZeroIframeVisible(false);
+    setIsBlurBackground(false);
   };
 
-
-
   return (
-    <div className="page-container">
-      <div className="gallery-container">
-
+        <div className={`page-container ${isBlurBackground ? 'blur-background' : ''}`}>      
+        <div className="gallery-container">
         <div>
           <h1 className='project_title'>Sora no misu<div className="dropdown-header" onClick={handleSoraDropdownClick}>
        | Brand Guidelines |
@@ -33,7 +32,7 @@ function Gallery() {
           <div className="dropdown-container">
       
       {isSoraIframeVisible && (
-        <div className="iframe-popup">
+        <div div className={`iframe-popup ${isBlurBackground ? 'active' : ''}`}>
           <button className="close-button" onClick={handleCloseClick}>
                   <img src={close} className='close-button' alt='close'  />
                 </button>
@@ -97,7 +96,7 @@ function Gallery() {
           <div className="dropdown-container">
       
       {isZeroIframeVisible && (
-        <div className="iframe-popup">
+        <div div className={`iframe-popup ${isBlurBackground ? 'active' : ''}`}>
           <button className="close-button" onClick={handleCloseClick}>
                   <img src={close} className='close-button' alt='close' />
                 </button>
