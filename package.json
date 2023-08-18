@@ -9,6 +9,12 @@
   "dependencies": {
   
     
+  "@react-three/drei": "^9.80.3",
+  
+    
+  "@react-three/fiber": "^8.13.7",
+  
+    
   "@testing-library/jest-dom": "^5.17.0",
   
     
@@ -18,7 +24,13 @@
   "@testing-library/user-event": "^13.5.0",
   
     
+  "@types/three": "^0.155.0",
+  
+    
   "gsap": "^3.12.2",
+  
+    
+  "leva": "^0.9.35",
   
     
   "react": "^18.2.0",
@@ -46,6 +58,9 @@
   
     
   "styled-components": "^6.0.7",
+  
+    
+  "three": "^0.155.0",
   
     
   "wallop": "^2.4.1",

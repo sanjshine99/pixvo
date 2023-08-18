@@ -1,5 +1,5 @@
 hr{
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .gallery-container {
   max-width: 100%;
@@ -48,7 +48,7 @@ hr{
 }
 
 .big-image:hover {
-  transform: scale(1.1);
+transform: scale(1.01);
 }
 
 /* The container that covers the page and provides blur effect */
@@ -125,9 +125,11 @@ hr{
   width: 100%;
   border: none;
 }
-
+.blur-background {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+}
 .iframe-popup {
-  position: fixed;
+  position: relative;
   width: 1080px;
   height: 900px;
   top: 50%;
@@ -142,6 +144,22 @@ hr{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+.iframe-popup.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: 1s anim-lineUp ease-out;
 }
 
 .close-button {
